@@ -10,6 +10,7 @@ use App\Http\Controllers\bincomeController;
 use App\Http\Controllers\bexpenseController;
 use App\Http\Controllers\incomeController;
 use App\Http\Controllers\expenseController;
+use App\Http\Controllers\RoleController;
 // use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
@@ -32,6 +33,7 @@ Route::resource('dashboard/bincome',bincomeController::class );
 Route::resource('dashboard/bexpense',bexpenseController::class );
 Route::resource('dashboard/income',incomeController::class );
 Route::resource('dashboard/expense',expenseController::class );
+Route::resource('role',RoleController::class );
 // Route::resource('dashboard',DashboardController::class );
 //gpt
 
