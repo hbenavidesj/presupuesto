@@ -9,7 +9,8 @@
     <div>
         <h1> Listado de personas</h1>
         <br>
-        <a href="{{url('dashboard/person/create')}}"<button type="button" class="btn btn-dark"></button>Nueva persona </a>
+        <a href="{{url('dashboard/person/create')}}"button type="button" class="btn btn-dark"></button>Nueva persona </a>
+       
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -45,7 +46,7 @@
                         <form action="{{url('dashboard/person/'.$person->id)}}"method="post">
                             @method("DELETE")
                             @csrf
-                            <button class="bi bi-eraser-fill" tupe="submit"></button>
+                            <button class="bi bi-eraser-fill" type="submit"></button>
                         </form>
                     </td>
                 </tr>
